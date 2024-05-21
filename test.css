@@ -1,0 +1,41 @@
+h1.alast {
+    color: aqua;
+    text-align: center;
+}
+#a {
+    color: red;
+}
+.a1 {
+    color: purple;
+}
+p.a2 {
+    color: peru;
+}
+/* 
+* {
+  text-align: center;
+  color: blue;
+}
+here we comment out * because it will work on all HTML text.
+*/
+div p {
+    color: blue;
+}
+div > p {
+    color: aquamarine;
+}
+div ~ p {
+    color: red;
+}
+a:link {
+    color: brown;
+}
+a.highlight:hover {
+    color: blue;
+}
+a:visited {
+    color: violet;
+}
+a:active {
+    color: green;
+}

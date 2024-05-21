@@ -1,0 +1,179 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* here * tag is used and it is valid for all css file */
+body {
+    font-family: Arial;
+    background-color: #8ad9e1;
+    padding: 10px;
+    border: 5px dotted #726ec4;
+}
+/* here in body we can change color and borders */
+h1,h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff0022;
+    border: inherit;
+    letter-spacing: 5px;
+    border-radius: 25px;
+}
+#head3 {
+    opacity: 0.5;
+    word-spacing: 10px;
+}
+/* here opacity differ from 0 to 1 and it will opaque the given image or color */
+h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6e2f2fdf;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: #6d8000;
+}
+.UREngine {
+    text-indent: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #40e0db;
+    padding: inherit;
+}
+.UREngine:first-line {
+    font-weight: bold;
+}
+figure.UREngine {
+    font-family: monospace;
+    color: #ff4000;
+}
+#paraknow {
+    font-size: 25px;
+    color: #FF0000;
+    background-color: aliceblue;
+    padding: 10px;
+}
+#paraknow:first-letter {
+    font-size: 50px;
+}
+p b {
+    color: #FF7F50;
+    font-size: 25px;
+}
+p sub {
+    color: #CCCCFF;
+    font-size: 5px;
+}
+li>a {
+    color: #6495ED;
+    font-size: 20px;
+}
+em {
+    color:#000080;
+    font-size: 25px;
+}
+h2+h6 {
+    color:#FF7F50;
+    font-size: 15px;
+}
+#pic1 {
+    background-color: white;
+}
+#pic2 {
+    vertical-align: bottom;
+}
+#pic3 {
+    vertical-align: baseline;
+}
+#zero {
+    background-color:rgb(78, 37, 44);
+    background-color: hsla(40%,75%,100%,0.5);
+    border:#800000 solid;
+    padding: 10px;
+}
+#one {
+    background-color:rgb(133, 78, 87);
+    border:#800000 solid;
+    padding: 10px;
+}
+#two {
+    background-color:rgb(163, 62, 78);
+    border:#800000 solid;
+    padding: 10px;
+}
+#uno {
+    font-weight: bold;
+    font-style: italic;
+}
+#dos {
+    font-weight: normal;
+    font-style: normal;
+}
+#tres {
+    text-transform: uppercase;
+}
+#quad {
+    text-transform: lowercase;
+}
+#quin {
+    text-transform: capitalize;
+    text-align: center;
+}
+#aa {
+    text-decoration: underline;
+}
+#ab {
+    text-decoration: line-through;
+}
+#ac {
+    text-decoration: overline;
+}
+a:link {
+    color:#000080;
+}
+a:visited {
+    color:#6495ED;
+}
+#quotes {
+    height: 300px;
+    width: 300px;
+    background-color:#6495ED;
+    overflow: scroll;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#list1>li {
+    display: inline;
+    margin-right: 10px;
+}
+ol {
+    list-style-type: square;
+}
+ul {
+    list-style-type: upper-alpha;
+    margin: 10px 400px 50px 0px;
+    list-style-position: inside;
+}
+table{
+    width: 100px;
+    padding: 25px;
+    text-transform: uppercase;
+    background-color: #6495ED;
+    border-spacing: 15px;
+}
+input{
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #6495ED;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 30px;
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+    margin-bottom: 10px;
+}
+input:hover {
+    background-color: #ffffff;
+    border: 1px solid #b1e1e4;
+}
+
+

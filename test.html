@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src=""></script>
+  <!--we can use script src to connect javascript to html-->
+  <h1 style="text-align: center; color: aqua;">Basic JS</h1>
+  <p>you can check console in inspect for given code </p><hr>
+  <!--by using script tag we can able to do javascript within html without using script src and making another file-->
+  <script>
+    console.log("Hello world")
+// we use console.log for printing the given text or value in inspect in javascript
+
+alert("this is web")
+
+// by using let , we can able to take 2 numbers
+let number1 = 10;
+let number2 = 5;
+
+// here we will add two numbers
+let additionResult = number1 + number2;
+console.log("Addition of " + number1 + " and " + number2 + " is: " + additionResult);
+
+// here we will subtract two numbers
+let subtractionResult = number1 - number2;
+console.log("Subtraction of " + number2 + " from " + number1 + " is: " + subtractionResult);
+
+// here we will multiply two numbers
+let multiplicationResult = number1 * number2;
+console.log("Multiplication of " + number1 + " and " + number2 + " is: " + multiplicationResult);
+
+// here we will divide two numbers
+let divisionResult = number1 / number2;
+console.log("Division of " + number1 + " by " + number2 + " is: " + divisionResult);
+
+//here we use for loop for increment of i
+for (let i = 0; i < 5; i++) {
+  console.log('The number is ' + i);
+}
+//let is used to put 
+//we use while loop
+let i = 0;
+while (i < 5) {
+  console.log('The number is ' + i);
+  i++;
+}
+
+// do while loop
+let j = 0;
+do {
+  console.log('The number is ' + j);
+  j++;
+} while (j < 5);
+
+//const is used with for loop
+const person = {fname:"navneet", lname:"singh", age:20};
+for (let key in person) {
+  console.log(key + ': ' + person[key]);
+}
+let cars = ['mahindra', 'tata', 'toyota'];
+for (let car of cars) {
+  console.log(car);
+}
+
+// here we use switch and break statements
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo2").innerHTML = "Today is " + day;
+  </script>
+</body>
+</html>

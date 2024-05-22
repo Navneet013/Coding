@@ -13,6 +13,7 @@ html {
 }
 
 div.h1 {
+  max-width: 100%;
   width: 1285.6px;
   height: 110px;
 }
@@ -137,24 +138,31 @@ header {
   z-index: 2;
 }
 
+.row2 ul li:hover .navsubmenu {
+  display: inline;
+}
+
 .secondnav {
-  left: 230px;
+  left: 200px;
 }
 
 .navsubmenu ul {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  text-align: left;
 }
 
 .navsubmenu ul li {
   color: white !important;
+  text-align: start;
 }
 
 .navsubmenu ul li a {
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white !important;
   padding: 1rem;
+  text-align: start;
 }
 
 .navsubmenu ul li:hover {
@@ -741,7 +749,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 .search-bar {
@@ -749,6 +757,7 @@ header {
   width: 50%;
   display: flex;
   align-items: center;
+  transition: all 1s;
 }
 
 .search-bar input {
@@ -759,6 +768,7 @@ header {
   border: none;
   padding: 5px;
   outline: none;
+  transition: all 1s;
 }
 
 .search-bar button {
@@ -770,6 +780,7 @@ header {
   padding: 5px;
   color: white;
   outline: none;
+  transition: all 1s;
 }
 
 .color-boxes {

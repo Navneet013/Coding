@@ -428,10 +428,16 @@ header {
   margin-bottom: 17px;
 }
 .r1:hover {
-  color: #ffffff;
-  background-color: #84b533;
+  color: var(--main-hover-color);
+  background-color: var(--main-hover-color);
   border-color: #ffffff;
 }
+
+.r1:hover * {
+  color: #fff;
+  cursor: pointer;
+}
+
 .rect:hover {
   color: #ffffff;
 }
@@ -441,15 +447,18 @@ header {
 .rect1 {
   width: 35.6px;
   height: 100%;
-  color: #84b533;
+  color: var(--main-hover-color);
   border-left: 1px solid #e1e0df;
   border-top: 1px solid #e1e0df;
   border-bottom: 1px solid #e1e0df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .rect {
   width: 514.55px;
   height: 100%;
-  color: #84b533;
+  color: var(--main-hover-color);
   border: 1px solid #e1e0df;
   padding: 8px 15px;
   font-size: 14px;

@@ -10,7 +10,7 @@ const searchButton = document.querySelector('.search-bar button');
 const reference = document.querySelector('.reference');
 const footer = document.querySelector('.footer');
 const dots = document.querySelectorAll('.dot');
-const dots1 = document.querySelectorAll('.dot1');
+const dots1 = document.querySelectorAll('.dot1 svg');
 const baksa = document.querySelector('#baksa');
 // constants
 const RED_COLOR = '#7D0202';
@@ -46,6 +46,8 @@ sliderDiv.addEventListener('click', () => {
   }
 });
 
+document.documentElement.style.setProperty('--main-hover-color', GREEN_COLOR);
+
 colorBoxes.forEach((colorBox) => {
   colorBox.addEventListener('click', () => {
     if (colorBox.classList.contains('red')) {
@@ -68,7 +70,7 @@ colorBoxes.forEach((colorBox) => {
         dot.style.backgroundColor = INPUT_RED_COLOR;
       });
       dots1.forEach((dot1) => {
-        dot1.style.color = `${RED_COLOR} !important`;
+        dot1.style.color = `${RED_COLOR}`;
       });
     } else if (colorBox.classList.contains('blue')) {
       topWrapper.style.backgroundColor = BLUE_COLOR;
@@ -161,3 +163,50 @@ colorBoxes.forEach((colorBox) => {
     }
   });
 });
+
+// Image slider
+const leftControl = document.querySelector('.control-left');
+const rightControl = document.querySelector('.control-right');
+const imgbox = document.querySelector('.img1 img');
+
+const images = ['images/1013.jpg', 'images/1068.jpg', 'images/1069.jpg'];
+
+let count = 0;
+
+function updateCount(sign) {
+  switch (sign) {
+    case 'left':
+      if (count > 0) {
+        count = count - 1;
+      } else {
+        count = images.length - 1;
+      }
+      break;
+    case 'right':
+      if (count < images.length - 1) {
+        count = count + 1;
+      } else {
+        count = 0;
+      }
+      break;
+  }
+  imgbox.style.animation = 'fadeOut 1.4s linear';
+  setTimeout(() => {
+    imgbox.style.animation = '';
+  }, 1500);
+}
+
+leftControl.addEventListener('click', () => {
+  updateCount('left');
+  imgbox.src = images[count];
+});
+rightControl.addEventListener('click', () => {
+  updateCount('right');
+  imgbox.src = images[count];
+});
+
+// automatic image timer
+setInterval(() => {
+  updateCount('right');
+  imgbox.src = images[count];
+}, 4000);

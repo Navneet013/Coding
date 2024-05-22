@@ -161,8 +161,10 @@ header {
 .navsubmenu ul li a {
   background-color: rgba(0, 0, 0, 0.6);
   color: white !important;
-  padding: 1rem;
-  text-align: start;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .navsubmenu ul li:hover {

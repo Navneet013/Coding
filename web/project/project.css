@@ -104,7 +104,7 @@ header {
   padding: 27px 25px;
 }
 
-.row2 ul li:hover * {
+.row2 ul li a:hover svg {
   color: white;
 }
 
